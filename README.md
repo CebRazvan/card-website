@@ -1,5 +1,5 @@
 # card-website
-My business card website
+My business card website.
 
 Welcome to my business card site! As a web programmer, I specialize in crafting customized, high-quality websites that are tailored to meet the unique needs of my clients.
 
