@@ -23,6 +23,8 @@ h1,h2,h3,h4,h5,h6 {
     color: #eeeeeefc;
     
 }
+
+
 .block-rounted {
     width: 80%;
     height: 150px;
@@ -30,10 +32,22 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 25px;
     margin-bottom: 40px;
 }
+
+
 .inner-block-service {
     width: 90%;
     height: 80%;
 
+}
+
+@media (max-width: 320px) {
+
+    .block-service {
+        height: 170px !important;      
+    }
+    .inner-block-service {
+        height: 85% !important;    
+    }
 }
 
 hr {
