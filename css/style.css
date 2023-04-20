@@ -40,6 +40,11 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
+.circle-icon {
+    width: 80px;
+    height: 80px;
+}
+
 @media (max-width: 320px) {
 
     .block-service {
@@ -47,6 +52,12 @@ h1,h2,h3,h4,h5,h6 {
     }
     .inner-block-service {
         height: 85% !important;    
+    }
+}
+@media (max-width: 1200px) {
+    .circle-icon {
+        width: 60px !important;
+        height: 60px !important;
     }
 }
 
