@@ -22,25 +22,23 @@ h1,h2,h3,h4,h5,h6 {
     transform: rotateX(-20deg);
   }
   
-  .wrapper {
+.wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     animation: spin 7s linear infinite;
-  }
+}
   
-  @keyframes spin {
+@keyframes spin {
     100% {
       transform: rotateY(360deg);
     }
-  }
+}
   
-  .pyramid-loader .wrapper .side {
+.pyramid-loader .wrapper .side {
     width: 70px;
     height: 70px;
-  /* you can choose any gradient or color you want */
-    /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
     position: absolute;
     top: 0;
     left: 0;
@@ -49,29 +47,29 @@ h1,h2,h3,h4,h5,h6 {
     margin: auto;
     transform-origin: center top;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  }
+}
   
-  .pyramid-loader .wrapper .side1 {
+.pyramid-loader .wrapper .side1 {
     transform: rotateZ(-30deg) rotateY(90deg);
     background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
-  }
+}
   
-  .pyramid-loader .wrapper .side2 {
+.pyramid-loader .wrapper .side2 {
     transform: rotateZ(30deg) rotateY(90deg);
     background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
-  }
+}
   
-  .pyramid-loader .wrapper .side3 {
+.pyramid-loader .wrapper .side3 {
     transform: rotateX(30deg);
     background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
-  }
+}
   
-  .pyramid-loader .wrapper .side4 {
+.pyramid-loader .wrapper .side4 {
     transform: rotateX(-30deg);
     background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
-  }
+}
   
-  .pyramid-loader .wrapper .shadow {
+.pyramid-loader .wrapper .shadow {
     width: 60px;
     height: 60px;
     background: #8B5AD5;
@@ -83,8 +81,43 @@ h1,h2,h3,h4,h5,h6 {
     margin: auto;
     transform: rotateX(90deg) translateZ(-40px);
     filter: blur(12px);
-  }
-  /* Piramide Animation End. */
+}
+/* Piramide Animation End. */
+
+
+/* Image Animation */
+.img-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    color: #e5e5e5;
+    font-weight: 600;
+}
+
+.img-block::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -10px;
+    top: -10px;
+    border-radius: 50%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(35deg, rgb(47, 190, 238), rgb(218, 57, 143), rgb(139, 255, 23));
+    filter: blur(20px);
+    animation: animationCicreImg 3s linear infinite;
+}
+  
+@keyframes animationCicreImg {
+    to {
+      transform: rotate(360deg);
+    }
+}
+/* Image Animation End */
 
 
 .block-service {
