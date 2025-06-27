@@ -119,6 +119,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* Image Animation End */
 
+/* Круглые изображения */
+.img-block img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50% !important;
+}
 
 .block-service {
     width: 100%;
